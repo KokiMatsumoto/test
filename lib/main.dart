@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_app/main_model.dart';
 
+import 'book_list_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
                         //TODO
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MainModel()),
+                          MaterialPageRoute(builder: (context) => BookListPage()),
                         );
                       },
                     ),
