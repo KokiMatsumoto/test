@@ -33,7 +33,10 @@ class MyApp extends StatelessWidget {
                       child: Text('ボタン'),
                       onPressed: () {
                         //TODO
-                        model.changekboyText();
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MainModel()),
+                        );
                       },
                     ),
                   ],
